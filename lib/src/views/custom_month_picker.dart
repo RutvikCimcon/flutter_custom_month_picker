@@ -254,16 +254,17 @@ class _CustomMonthPickerState extends State<_CustomMonthPicker> {
             pop();
           },
           style: ElevatedButton.styleFrom(
+            elevation: 0,
             fixedSize: const Size(100, 40),
             padding: EdgeInsets.zero,
             backgroundColor: widget.highlightColor,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
+              borderRadius: BorderRadius.circular(6.0),
             ),
           ),
           child: Text(
             widget.selectButtonText!,
-            style: TextStyle(color: widget.selectTextColor ?? Colors.white),
+            style: TextStyle(color: Colors.white),
           ),
         ),
         const SizedBox(width: 15),
