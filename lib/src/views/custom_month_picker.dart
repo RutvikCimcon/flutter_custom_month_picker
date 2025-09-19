@@ -278,12 +278,12 @@ class _CustomMonthPickerState extends State<_CustomMonthPicker> {
   }
 
   ///calculate the width size for all platforms
-  alertResponsiveSize(dynamic size){
+  double alertResponsiveSize(dynamic size){
     if(size != null){
       if(MediaQuery.of(context).size.width < 400 ){
         return MediaQuery.of(context).size.width;
       }
-      return 400;
+      return 400.0;
     }
     return  widget.size!.width;
   }
